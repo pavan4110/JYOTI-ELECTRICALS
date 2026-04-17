@@ -3,17 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jyoti Electricals</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Jyoti Electricals | B2B & Retail Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Safety Orange and Deep Blue */
+        .bg-je-blue { background-color: #0f172a; }
+        .text-je-blue { color: #0f172a; }
+        .bg-je-orange { background-color: #f97316; }
+        .hover-je-orange:hover { background-color: #ea580c; }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Jyoti Electricals</h1>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md py-4 px-8 flex justify-between items-center sticky top-0 z-50">
+        <div class="text-2xl font-extrabold text-je-blue tracking-tight">
+            JYOTI <span class="text-orange-500">ELECTRICALS</span>
+        </div>
+        <div class="hidden md:flex space-x-6 font-semibold text-gray-700">
+            <a href="#" class="hover:text-orange-500 transition">Home</a>
+            <a href="#" class="hover:text-orange-500 transition">Product Catalog</a>
+            <a href="#" class="hover:text-orange-500 transition">Bulk Inquiry</a>
+            <a href="#" class="hover:text-orange-500 transition">GST / About Us</a>
+        </div>
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full flex items-center shadow-lg transition">
+            WhatsApp Us
+        </a>
+    </nav>
+
+    <header class="bg-je-blue text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop');"></div>
+        <div class="relative max-w-7xl mx-auto px-8 py-24 flex flex-col items-start">
+            <span class="bg-je-orange text-white text-sm font-bold uppercase tracking-wider py-1 px-3 rounded mb-4">Patna's Direct Source</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight max-w-3xl">
+                Genuine Electricals. <br> Wholesale Rates.
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl">
+                The trusted supply partner for contractors, institutions, and homes. Premium stock from Havells, Polycab, Wipro, and Orient with 100% GST-compliant billing.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#" class="bg-je-orange hover-je-orange text-white font-bold py-4 px-8 rounded shadow-lg text-lg transition">
+                    Download Price List
+                </a>
+                <a href="#" class="bg-transparent border-2 border-white hover:bg-white hover:text-je-blue text-white font-bold py-4 px-8 rounded shadow-lg text-lg transition">
+                    Request a Quote
+                </a>
+            </div>
+        </div>
     </header>
-    <main>
-        <h2>Our Products</h2>
-        <p>Explore a wide range of electrical products!</p>
-    </main>
-    <script src="js/script.js"></script>
+
+    <section class="bg-white py-8 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center opacity-60 grayscale hover:grayscale-0 transition duration-500">
+            <h2 class="text-2xl font-bold text-gray-400">HAVELLS</h2>
+            <h2 class="text-2xl font-bold text-gray-400">POLYCAB</h2>
+            <h2 class="text-2xl font-bold text-gray-400">WIPRO</h2>
+            <h2 class="text-2xl font-bold text-gray-400">ORIENT</h2>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-8 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-je-blue mb-4">Explore Our Inventory</h2>
+            <p class="text-gray-600 text-lg">Add items to your quote list for an instant competitive price.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer border border-gray-100">
+                <div class="h-48 bg-gray-200 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558222218-b7b54eede3f3?q=80&w=1974&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-je-blue mb-2">Wires & Cables</h3>
+                    <p class="text-gray-500 text-sm">Industrial FR/FRLS and domestic house wire.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer border border-gray-100">
+                <div class="h-48 bg-gray-200 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544724569-5f546fd6f2b6?q=80&w=1974&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-je-blue mb-2">Switchgear</h3>
+                    <p class="text-gray-500 text-sm">MCBs, RCCBs, and Distribution Boards.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer border border-gray-100">
+                <div class="h-48 bg-gray-200 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=1935&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-je-blue mb-2">Professional Lighting</h3>
+                    <p class="text-gray-500 text-sm">LED panels, COB lights, and street lighting.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer border border-gray-100">
+                <div class="h-48 bg-gray-200 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2070&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-je-blue mb-2">Motors & Starters</h3>
+                    <p class="text-gray-500 text-sm">Heavy-duty agricultural and commercial starters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
